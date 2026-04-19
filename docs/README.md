@@ -78,7 +78,7 @@
 
 ### 설계 제안
 
-- [08-rearchitecture-proposal.md](08-rearchitecture-proposal.md): WordRank, KR-WordRank, 그리고 현재 soynlp 구현을 하나의 공통 플랫폼으로 다시 세운다면 어떤 구조가 좋은지 제안한다.
+- [08-rearchitecture-proposal.md](08-rearchitecture-proposal.md): WordRank, KR-WordRank, 현재 soynlp 구현, 그리고 두 개의 `gpt-5.4 xhigh` 설계 초안을 합쳐 하나의 최종 재구성안으로 정리한 문서다.
 
 ## 빠른 길찾기
 
