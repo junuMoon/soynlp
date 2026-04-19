@@ -12,7 +12,8 @@
 4. [04-module-reference.md](04-module-reference.md)
 5. [05-assets-tests-and-caveats.md](05-assets-tests-and-caveats.md)
 6. [06-file-index.md](06-file-index.md)
-7. 보충 읽기: [kr_word_rank_explained.md](kr_word_rank_explained.md)
+7. [07-implementation-deep-dive.md](07-implementation-deep-dive.md)
+8. 보충 읽기: [kr_word_rank_explained.md](kr_word_rank_explained.md)
 
 ## 이 레포를 한 문장으로 요약하면
 
@@ -50,10 +51,12 @@
 - [04-module-reference.md](04-module-reference.md): 소스 파일별 역할과 공개 API를 파일 단위로 정리한다.
 - [05-assets-tests-and-caveats.md](05-assets-tests-and-caveats.md): 사전, 모델, 튜토리얼, 테스트, 현재 코드 트리 기준 주의점을 정리한다.
 - [06-file-index.md](06-file-index.md): 레포의 실제 파일을 빠짐없이 훑을 수 있는 인덱스다.
-- [kr_word_rank_explained.md](kr_word_rank_explained.md): 이 레포의 바깥쪽 친척 알고리즘인 KR-WordRank를 별도 배경 지식으로 자세히 풀어쓴 보충 문서다.
+- [07-implementation-deep-dive.md](07-implementation-deep-dive.md): 실제 클래스, 메서드, 내부 상태 변화까지 따라가는 구현 중심 문서다.
+- [kr_word_rank_explained.md](kr_word_rank_explained.md): 이 레포와 문제의식이 닿아 있는 KR-WordRank를 별도 배경 지식으로 자세히 풀어쓴 보충 문서다.
 
 ## 빠른 길찾기
 
 - "이 프로젝트의 핵심 설계를 먼저 알고 싶다"면 `01 -> 02 -> 03` 순서로 읽으면 된다.
 - "특정 클래스나 파일이 무슨 역할인지 빨리 찾고 싶다"면 `04`와 `06`부터 보면 된다.
-- "이 코드가 어디까지 현재형이고 어디가 실험적 흔적인지" 알고 싶다면 `05`를 먼저 보면 된다.
+- "실제 메서드 흐름과 내부 상태 변화까지 보고 싶다"면 `07`을 바로 이어서 보면 된다.
+- "이 코드가 현재 기준으로 어디가 주력 경로이고 어디가 실험적 흔적인지" 알고 싶다면 `05`를 먼저 보면 된다.

@@ -192,7 +192,7 @@ README와 노트북에서 직접 인용하는 샘플이다.
 
 ### 1. `NewsNounExtractor`는 오래된 흔적이 보인다
 
-`soynlp/noun/_noun_news.py`의 constructor는 `base_noun_dictionary` 인자를 받지만, 내부에서는 `noun_dictionary`라는 이름을 사용한다. 소스만 보면 현재형 리팩터링이 덜 끝난 흔적처럼 읽힌다.
+`soynlp/noun/_noun_news.py`의 constructor는 `base_noun_dictionary` 인자를 받지만, 내부에서는 `noun_dictionary`라는 이름을 사용한다. 소스만 보면 리팩터링이 아직 덜 끝난 흔적처럼 읽힌다.
 
 ### 2. `postagger/_lrtagger.py`는 현재 `Dictionary` 구현과 결이 다르다
 
@@ -204,7 +204,7 @@ README와 노트북에서 직접 인용하는 샘플이다.
 
 ### 4. `ner/_rules.py`는 구현되지 않았다
 
-NER 관련 함수 이름은 export되지만 실제 내용은 모두 `NotImplemented`다. 따라서 이 패키지는 설계 자리만 있는 상태로 보는 편이 정확하다.
+NER 관련 함수 이름은 공개되지만 실제 내용은 모두 `NotImplemented`다. 따라서 이 패키지는 설계 자리만 있는 상태로 보는 편이 정확하다.
 
 ### 5. `ensure_normalized` 의미가 모듈마다 완전히 일관적이지 않다
 
@@ -226,4 +226,3 @@ NER 관련 함수 이름은 export되지만 실제 내용은 모두 `NotImplemen
 - 이 레포는 코드만이 아니라 모델 파일, 기본 사전, 튜토리얼, 테스트 스크립트가 함께 의미를 만든다.
 - `noun_v2`, `predicator`, `pos`, `tokenizer`, `word`가 현재 이해의 중심선이다.
 - 일부 모듈과 CI 설정은 현재 트리와 완전히 맞지는 않는 역사적 흔적을 보인다.
-

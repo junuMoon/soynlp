@@ -1,6 +1,6 @@
 # 6. 파일 인덱스
 
-이 문서는 현재 레포에서 "읽을 가치가 있는 canonical 파일"을 빠짐없이 훑기 위한 인덱스다.
+이 문서는 현재 레포에서 "읽을 가치가 있는 핵심 파일"을 빠짐없이 훑기 위한 인덱스다.
 
 제외한 항목:
 
@@ -29,6 +29,7 @@
 - `docs/04-module-reference.md`: 소스 파일 레퍼런스.
 - `docs/05-assets-tests-and-caveats.md`: 자산/테스트/주의사항.
 - `docs/06-file-index.md`: 전체 파일 인덱스.
+- `docs/07-implementation-deep-dive.md`: 구현 중심 상세 해설.
 - `docs/kr_word_rank_explained.md`: KR-WordRank 보충 해설 문서.
 
 ## 6.2 `soynlp/` 루트

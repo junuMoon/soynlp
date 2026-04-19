@@ -1,6 +1,6 @@
 # 4. 모듈 레퍼런스
 
-이 장은 `soynlp/` 소스 파일을 패키지별로 정리한 빠른 참조표다. "이 파일이 왜 존재하고, 무엇을 export하며, 어떤 역할을 맡는가"를 짧고 촘촘하게 적었다.
+이 장은 `soynlp/` 소스 파일을 패키지별로 정리한 빠른 참조표다. "이 파일이 왜 존재하고, 무엇을 공개하며, 어떤 역할을 맡는가"를 짧고 촘촘하게 적었다.
 
 ## 4.1 루트 패키지
 
@@ -8,7 +8,7 @@
 
 - 패키지 메타데이터를 정의한다.
 - 하위 패키지 `hangle`, `normalizer`, `noun`, `predicator`, `postagger`, `tokenizer`, `vectorizer`, `word`, `utils`를 import해 공개한다.
-- 하위 호환성 때문에 `DoublespaceLineCorpus`를 루트에서 다시 export한다.
+- 하위 호환성 때문에 `DoublespaceLineCorpus`를 루트에서 다시 공개한다.
 
 ## 4.2 `soynlp.hangle`
 
@@ -49,7 +49,7 @@
 
 ### `soynlp/utils/__init__.py`
 
-- 메모리/파일/유사도 유틸과 `DoublespaceLineCorpus`, `EojeolCounter`, `LRGraph`, `svd`를 export한다.
+- 메모리/파일/유사도 유틸과 `DoublespaceLineCorpus`, `EojeolCounter`, `LRGraph`, `svd`를 공개한다.
 
 ### `soynlp/utils/utils.py`
 
@@ -67,7 +67,7 @@
 
 ### `soynlp/word/__init__.py`
 
-- `WordExtractor`, `pmi`, `Bigram`을 export한다.
+- `WordExtractor`, `pmi`, `Bigram`을 공개한다.
 
 ### `soynlp/word/_word.py`
 
@@ -89,7 +89,7 @@
 
 ### `soynlp/vectorizer/__init__.py`
 
-- `BaseVectorizer`, `sent_to_word_contexts_matrix` export.
+- `BaseVectorizer`, `sent_to_word_contexts_matrix`를 공개한다.
 
 ### `soynlp/vectorizer/_vectorizer.py`
 
@@ -209,13 +209,13 @@
 
 ### `soynlp/predicator/_predicator.py`
 
-- 용언 추출의 메인 orchestrator.
+- 용언 추출의 메인 총괄 파이프라인.
 - 기본 사전 로드, noun-covered eojeol 제거, eomi/stem 추출, eojeol lemmatization, adjective/verb 분리를 담당.
 
 ### `soynlp/predicator/_eomi.py`
 
-- stem surface 뒤의 R를 바탕으로 eomi를 추출한다.
-- prediction 후 canonical eomi로 lemmatize한다.
+- 어간 표면형 뒤의 R를 바탕으로 eomi를 추출한다.
+- prediction 후 기본형 어미로 복원한다.
 
 ### `soynlp/predicator/_stem.py`
 
@@ -236,7 +236,7 @@
 
 ### `soynlp/pos/_news_pos.py`
 
-- 코퍼스 기반 POS 추출의 मुख्य 상위 파이프라인.
+- 코퍼스 기반 POS 추출의 핵심 상위 파이프라인.
 - noun/predicator를 먼저 추출한 뒤 남은 eojeol에 여러 패턴 매칭을 순차 적용한다.
 
 ### `soynlp/pos/_chat_pos.py`
@@ -254,7 +254,7 @@
 ### `soynlp/postagger/__init__.py`
 
 - 현재 공개되는 것은 `Dictionary`, evaluator들, template matcher들, `SimpleTagger`, postprocessor, `tagset`.
-- `LRMaxScoreTagger`는 export가 주석 처리되어 있다.
+- `LRMaxScoreTagger`는 공개 export가 주석 처리되어 있다.
 
 ### `soynlp/postagger/_dictionary.py`
 
@@ -300,7 +300,7 @@
 
 ### `soynlp/ner/__init__.py`
 
-- 날짜/요일/숫자/금액/기간/시간 판별 함수명을 export한다.
+- 날짜/요일/숫자/금액/기간/시간 판별 함수명을 공개한다.
 
 ### `soynlp/ner/_rules.py`
 
@@ -320,4 +320,3 @@
 8. `soynlp/pos/_news_pos.py`
 
 이 여덟 파일을 중심으로 보면 레포의 대부분이 보인다.
-
