@@ -6,14 +6,24 @@
 
 ## 추천 읽기 순서
 
+이제 문서 세트는 `본편`과 `부록`으로 나뉜다.
+
+### 본편: 처음부터 끝까지 읽는 흐름
+
 1. [01-overview.md](01-overview.md)
 2. [02-core-abstractions.md](02-core-abstractions.md)
 3. [03-algorithm-walkthrough.md](03-algorithm-walkthrough.md)
-4. [04-module-reference.md](04-module-reference.md)
-5. [05-assets-tests-and-caveats.md](05-assets-tests-and-caveats.md)
-6. [06-file-index.md](06-file-index.md)
-7. [07-implementation-deep-dive.md](07-implementation-deep-dive.md)
-8. 보충 읽기: [kr_word_rank_explained.md](kr_word_rank_explained.md)
+4. [04-implementation-deep-dive.md](04-implementation-deep-dive.md)
+
+### 부록: 읽다가 막힐 때 찾아보는 문서
+
+5. [05-module-reference.md](05-module-reference.md)
+6. [06-assets-tests-and-caveats.md](06-assets-tests-and-caveats.md)
+7. [07-file-index.md](07-file-index.md)
+
+### 보충 읽기
+
+8. [kr_word_rank_explained.md](kr_word_rank_explained.md)
 
 ## 이 레포를 한 문장으로 요약하면
 
@@ -45,18 +55,26 @@
 
 ## 어떤 문서가 무엇을 담당하나
 
+### 본편
+
 - [01-overview.md](01-overview.md): 이 프로젝트가 무엇을 만들고 어떤 철학으로 구성됐는지 설명한다.
 - [02-core-abstractions.md](02-core-abstractions.md): 거의 모든 모듈이 공유하는 핵심 자료구조와 점수 개념을 설명한다.
 - [03-algorithm-walkthrough.md](03-algorithm-walkthrough.md): 실제 추출기와 토크나이저가 어떻게 동작하는지 파이프라인 순서대로 풀어쓴다.
-- [04-module-reference.md](04-module-reference.md): 소스 파일별 역할과 공개 API를 파일 단위로 정리한다.
-- [05-assets-tests-and-caveats.md](05-assets-tests-and-caveats.md): 사전, 모델, 튜토리얼, 테스트, 현재 코드 트리 기준 주의점을 정리한다.
-- [06-file-index.md](06-file-index.md): 레포의 실제 파일을 빠짐없이 훑을 수 있는 인덱스다.
-- [07-implementation-deep-dive.md](07-implementation-deep-dive.md): 실제 클래스, 메서드, 내부 상태 변화까지 따라가는 구현 중심 문서다.
+- [04-implementation-deep-dive.md](04-implementation-deep-dive.md): 실제 클래스, 메서드, 내부 상태 변화까지 따라가는 구현 중심 문서다.
+
+### 부록
+
+- [05-module-reference.md](05-module-reference.md): 소스 파일별 역할과 공개 API를 파일 단위로 정리한다.
+- [06-assets-tests-and-caveats.md](06-assets-tests-and-caveats.md): 사전, 모델, 튜토리얼, 테스트, 현재 코드 트리 기준 주의점을 정리한다.
+- [07-file-index.md](07-file-index.md): 레포의 실제 파일을 빠짐없이 훑을 수 있는 인덱스다.
+
+### 보충
+
 - [kr_word_rank_explained.md](kr_word_rank_explained.md): 이 레포와 문제의식이 닿아 있는 KR-WordRank를 별도 배경 지식으로 자세히 풀어쓴 보충 문서다.
 
 ## 빠른 길찾기
 
-- "이 프로젝트의 핵심 설계를 먼저 알고 싶다"면 `01 -> 02 -> 03` 순서로 읽으면 된다.
-- "특정 클래스나 파일이 무슨 역할인지 빨리 찾고 싶다"면 `04`와 `06`부터 보면 된다.
-- "실제 메서드 흐름과 내부 상태 변화까지 보고 싶다"면 `07`을 바로 이어서 보면 된다.
-- "이 코드가 현재 기준으로 어디가 주력 경로이고 어디가 실험적 흔적인지" 알고 싶다면 `05`를 먼저 보면 된다.
+- "이 프로젝트를 처음부터 순서대로 이해하고 싶다"면 `01 -> 02 -> 03 -> 04`만 먼저 읽으면 된다.
+- "특정 클래스나 파일이 무슨 역할인지 빨리 찾고 싶다"면 `05`와 `07`부터 보면 된다.
+- "현재 기준으로 어디가 주력 경로이고 어디가 실험적 흔적인지" 알고 싶다면 `06`을 먼저 보면 된다.
+- "KR-WordRank까지 함께 묶어서 이해하고 싶다"면 마지막에 보충 문서를 덧붙이면 된다.

@@ -1,8 +1,8 @@
-# 4. 모듈 레퍼런스
+# 5. 모듈 레퍼런스
 
 이 장은 `soynlp/` 소스 파일을 패키지별로 정리한 빠른 참조표다. "이 파일이 왜 존재하고, 무엇을 공개하며, 어떤 역할을 맡는가"를 짧고 촘촘하게 적었다.
 
-## 4.1 루트 패키지
+## 5.1 루트 패키지
 
 ### `soynlp/__init__.py`
 
@@ -10,7 +10,7 @@
 - 하위 패키지 `hangle`, `normalizer`, `noun`, `predicator`, `postagger`, `tokenizer`, `vectorizer`, `word`, `utils`를 import해 공개한다.
 - 하위 호환성 때문에 `DoublespaceLineCorpus`를 루트에서 다시 공개한다.
 
-## 4.2 `soynlp.hangle`
+## 5.2 `soynlp.hangle`
 
 ### `soynlp/hangle/__init__.py`
 
@@ -31,7 +31,7 @@
 - 자모 분해 후 계산하는 `jamo_levenshtein`.
 - 문자 multiset/set 기반 `cosine_distance`, `jaccard_distance`.
 
-## 4.3 `soynlp.normalizer`
+## 5.3 `soynlp.normalizer`
 
 ### `soynlp/normalizer/__init__.py`
 
@@ -45,7 +45,7 @@
 - 반복문자 축약, 이모티콘 분해, 문자군 필터링을 제공한다.
 - 상위 추출기들이 쓰는 `normalize_sent_for_lrgraph()`가 있다.
 
-## 4.4 `soynlp.utils`
+## 5.4 `soynlp.utils`
 
 ### `soynlp/utils/__init__.py`
 
@@ -63,7 +63,7 @@
 
 - `sklearn.utils.extmath.randomized_svd`를 감싼 `svd()` 하나만 제공한다.
 
-## 4.5 `soynlp.word`
+## 5.5 `soynlp.word`
 
 ### `soynlp/word/__init__.py`
 
@@ -85,7 +85,7 @@
 - bigram 추출기 `Bigram`.
 - frequency, PMI, Mikolov 스타일 점수 중 하나를 사용해 bigram을 반환한다.
 
-## 4.6 `soynlp.vectorizer`
+## 5.6 `soynlp.vectorizer`
 
 ### `soynlp/vectorizer/__init__.py`
 
@@ -101,7 +101,7 @@
 - `(word, context)` co-occurrence 행렬 생성.
 - vocabulary 스캔, 문맥 집계, CSR matrix 인코딩을 담당.
 
-## 4.7 `soynlp.tokenizer`
+## 5.7 `soynlp.tokenizer`
 
 ### `soynlp/tokenizer/__init__.py`
 
@@ -131,7 +131,7 @@
 - `EojeolPatternTrainer` 구현.
 - substring vocabulary와 LR/RL graph를 훈련하고 저장/로드할 수 있다.
 
-## 4.8 `soynlp.lemmatizer`
+## 5.8 `soynlp.lemmatizer`
 
 ### `soynlp/lemmatizer/__init__.py`
 
@@ -150,7 +150,7 @@
 - `lemma_candidate()`와 `lemma_candidate_chat()`가 표면형에서 기본형 후보를 복원한다.
 - predefined 예외 처리와 최종 conjugation 검증 로직이 들어 있다.
 
-## 4.9 `soynlp.noun`
+## 5.9 `soynlp.noun`
 
 ### `soynlp/noun/__init__.py`
 
@@ -199,7 +199,7 @@
 
 - 조사로 오인하면 안 되는 명사 접미 성분 목록.
 
-## 4.10 `soynlp.predicator`
+## 5.10 `soynlp.predicator`
 
 ### `soynlp/predicator/__init__.py`
 
@@ -227,7 +227,7 @@
 - conjugation 테스트 기반으로 adjective/verb를 나누는 보조 규칙 모음.
 - `rule_classify()`는 suffix에 기반한 빠른 규칙 분류를 제공한다.
 
-## 4.11 `soynlp.pos`
+## 5.11 `soynlp.pos`
 
 ### `soynlp/pos/__init__.py`
 
@@ -249,7 +249,7 @@
 - 기본 adverb 사전 로드.
 - `-하` stem을 `-히` 부사로 바꾸는 간단한 파생 규칙 제공.
 
-## 4.12 `soynlp.postagger`
+## 5.12 `soynlp.postagger`
 
 ### `soynlp/postagger/__init__.py`
 
@@ -296,7 +296,7 @@
 
 - 영문 태그명을 한국어 품사명으로 대응시키는 tagset 딕셔너리.
 
-## 4.13 `soynlp.ner`
+## 5.13 `soynlp.ner`
 
 ### `soynlp/ner/__init__.py`
 
@@ -306,7 +306,7 @@
 
 - 실제 구현은 아직 없고 모두 `NotImplemented`다.
 
-## 4.14 지금 가장 먼저 봐야 할 파일
+## 5.14 지금 가장 먼저 봐야 할 파일
 
 파일 단위로 우선순위를 뽑으면 아래와 같다.
 
