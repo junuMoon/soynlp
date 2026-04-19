@@ -25,6 +25,10 @@
 
 8. [kr_word_rank_explained.md](kr_word_rank_explained.md)
 
+### 설계 제안
+
+9. [08-rearchitecture-proposal.md](08-rearchitecture-proposal.md)
+
 ## 이 레포를 한 문장으로 요약하면
 
 `soynlp`는 "주석 말뭉치 없이 한국어 코퍼스에서 반복 패턴을 세고, 어절을 L(왼쪽 의미 단위) + R(오른쪽 기능 단위)로 바라보며, 단어/명사/용언/품사를 통계적으로 추정하는 비지도 한국어 NLP 툴킷"이다.
@@ -72,9 +76,14 @@
 
 - [kr_word_rank_explained.md](kr_word_rank_explained.md): 이 레포와 문제의식이 닿아 있는 KR-WordRank를 별도 배경 지식으로 자세히 풀어쓴 보충 문서다.
 
+### 설계 제안
+
+- [08-rearchitecture-proposal.md](08-rearchitecture-proposal.md): WordRank, KR-WordRank, 그리고 현재 soynlp 구현을 하나의 공통 플랫폼으로 다시 세운다면 어떤 구조가 좋은지 제안한다.
+
 ## 빠른 길찾기
 
 - "이 프로젝트를 처음부터 순서대로 이해하고 싶다"면 `01 -> 02 -> 03 -> 04`만 먼저 읽으면 된다.
 - "특정 클래스나 파일이 무슨 역할인지 빨리 찾고 싶다"면 `05`와 `07`부터 보면 된다.
 - "현재 기준으로 어디가 주력 경로이고 어디가 실험적 흔적인지" 알고 싶다면 `06`을 먼저 보면 된다.
 - "KR-WordRank까지 함께 묶어서 이해하고 싶다"면 마지막에 보충 문서를 덧붙이면 된다.
+- "이 레포를 완전히 다시 짠다면 어떤 구조가 맞을지" 보고 싶다면 설계 제안 문서를 보면 된다.

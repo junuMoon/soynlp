@@ -31,6 +31,7 @@
 - `docs/06-assets-tests-and-caveats.md`: 부록 B. 자산/테스트/주의사항.
 - `docs/07-file-index.md`: 부록 C. 전체 파일 인덱스.
 - `docs/kr_word_rank_explained.md`: KR-WordRank 보충 해설 문서.
+- `docs/08-rearchitecture-proposal.md`: 미래 구조 재구성 제안서.
 
 ## 7.2 `soynlp/` 루트
 
